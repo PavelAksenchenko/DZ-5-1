@@ -17,7 +17,7 @@ class SQRServiceTest {
             "from 10 to 99 range 0-10000, 90, 0,10000",
             "from 10 to 99 range -1-1000, 0, -1,-1000"
     })
-    public void rangeNum(String testName, int expected, int lowerLimit, int upperLimit) {
+    public void rangeOfValues(String testName, int expected, int lowerLimit, int upperLimit) {
         SQRService sqrService = new SQRService();
 
         int actual = sqrService.rangeOfValues(lowerLimit, upperLimit);
@@ -25,12 +25,12 @@ class SQRServiceTest {
         assertEquals(actual, expected);
     }
  /*   @Test
-    public void rangeNum() {
+    public void rangeOfValues() {
         SQRService sqrService = new SQRService();
         int expected = 5;
         int lowerLimit = 200;
         int upperLimit = 300;
-        int actual = sqrService.rangeNum(lowerLimit, upperLimit);
+        int actual = sqrService.rangeOfValues(lowerLimit, upperLimit);
         assertEquals(actual, expected);
     } */
 }
