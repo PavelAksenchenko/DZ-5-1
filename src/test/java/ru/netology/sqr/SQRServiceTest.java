@@ -22,7 +22,7 @@ class SQRServiceTest {
 
         int actual = sqrService.rangeOfValues(lowerLimit, upperLimit);
 
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
  
 }
