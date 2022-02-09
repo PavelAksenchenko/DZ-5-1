@@ -16,7 +16,7 @@ class SQRServiceTest {
             "from 10 to 99 range 0-9800, 89, 0,9800",
             "from 10 to 99 range 0-10000, 90, 0,10000",
             "from 10 to 99 range -1-1000, 0, -1,-1000"
-    }
+    })
     public void rangeOfValues(String testName, int expected, int lowerLimit, int upperLimit) {
         SQRService sqrService = new SQRService();
 
